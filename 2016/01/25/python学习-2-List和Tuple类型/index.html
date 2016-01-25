@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="test," />
+  <meta name="keywords" content="python," />
 
 
 
@@ -57,16 +57,25 @@
 
 
 
-<meta name="description" content="努力或许不是关键，但一定是因素">
+<meta name="description" content="创建list
+Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。
+1L = [&amp;#39;Andy&amp;#39;,95.5,&amp;#39;Lisa&amp;#39;,85,&amp;#39;Bart&amp;#39;,59]&amp;#10;print L
+结果1[&amp;#39;Andy&amp;#39;, 95.5, &amp;#39;Lisa&amp;#39;, 85, &amp;#39;Bart&amp;#39;, 59]">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/2016/01/25/test/index.html">
+<meta property="og:title" content="python学习(2)List和Tuple类型">
+<meta property="og:url" content="http://yoursite.com/2016/01/25/python学习-2-List和Tuple类型/index.html">
 <meta property="og:site_name" content="ichancer_coder">
-<meta property="og:description" content="努力或许不是关键，但一定是因素">
-<meta property="og:updated_time" content="2016-01-25T05:22:00.577Z">
+<meta property="og:description" content="创建list
+Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。
+1L = [&amp;#39;Andy&amp;#39;,95.5,&amp;#39;Lisa&amp;#39;,85,&amp;#39;Bart&amp;#39;,59]&amp;#10;print L
+结果1[&amp;#39;Andy&amp;#39;, 95.5, &amp;#39;Lisa&amp;#39;, 85, &amp;#39;Bart&amp;#39;, 59]">
+<meta property="og:updated_time" content="2016-01-25T06:14:26.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="努力或许不是关键，但一定是因素">
+<meta name="twitter:title" content="python学习(2)List和Tuple类型">
+<meta name="twitter:description" content="创建list
+Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。
+1L = [&amp;#39;Andy&amp;#39;,95.5,&amp;#39;Lisa&amp;#39;,85,&amp;#39;Bart&amp;#39;,59]&amp;#10;print L
+结果1[&amp;#39;Andy&amp;#39;, 95.5, &amp;#39;Lisa&amp;#39;, 85, &amp;#39;Bart&amp;#39;, 59]">
 
 
 
@@ -84,7 +93,7 @@
   };
 </script>
 
-  <title> test | ichancer_coder </title>
+  <title> python学习(2)List和Tuple类型 | ichancer_coder </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -262,7 +271,7 @@
             
             
               
-                test
+                python学习(2)List和Tuple类型
               
             
           </h1>
@@ -274,7 +283,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-25T13:20:39+08:00" content="2016-01-25">
+            <time itemprop="dateCreated" datetime="2016-01-25T14:09:49+08:00" content="2016-01-25">
               2016-01-25
             </time>
           </span>
@@ -285,8 +294,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/25/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/test/" itemprop="commentsCount"></span>
+                <a href="/2016/01/25/python学习-2-List和Tuple类型/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/python学习-2-List和Tuple类型/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -307,7 +316,78 @@
       
 
       
-        
+        <a id="more"></a>
+<p><strong>创建list</strong></p>
+<p>Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Andy&#39;,95.5,&#39;Lisa&#39;,85,&#39;Bart&#39;,59]&#10;print L</span><br></pre></td></tr></table></figure>
+<p>结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Andy&#39;, 95.5, &#39;Lisa&#39;, 85, &#39;Bart&#39;, 59]</span><br></pre></td></tr></table></figure></p>
+<p>一个元素也没有的list，就是空list：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">empty_list = []&#10;print empty_list</span><br></pre></td></tr></table></figure>
+<p>结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[]</span><br></pre></td></tr></table></figure></p>
+<p><strong>索引的方式访问</strong></p>
+<p>1.正序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [95.5,85,59]&#10;print L[0]&#10;print L[1]&#10;print L[2]&#10;print L[2]</span><br></pre></td></tr></table></figure></p>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">95.5&#10;85&#10;59&#10;59</span><br></pre></td></tr></table></figure>
+<p>2.逆序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [95.5, 85, 59]&#10;print L[-1]&#10;print L[-2]&#10;print L[-3]&#10;print L[-4]</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">59&#10;85&#10;95.5</span><br></pre></td></tr></table></figure>
+<p><strong>list添加新元素</strong></p>
+<p>1.按索引位置插入insert()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]&#10;L.insert(2, &#39;Paul&#39;)&#10;print L</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Paul&#39;, &#39;Bart&#39;]</span><br></pre></td></tr></table></figure>
+<p>2.直接插入在list的末尾</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]&#10;L.append(&#39;Paul&#39;)&#10;print L</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;, &#39;Paul&#39;]</span><br></pre></td></tr></table></figure>
+<p><strong>list删除元素</strong></p>
+<p>1.删除末尾元素（无参的pop()函数）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;, &#39;Paul&#39;]&#10;&#62;&#62;&#62; L.pop()&#10;&#62;&#62;&#62; print L</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]</span><br></pre></td></tr></table></figure>
+<p>2.删除索引的元素pop(index)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;, &#39;Paul&#39;]&#10;&#62;&#62;&#62; L.pop(2)</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]</span><br></pre></td></tr></table></figure>
+<p><strong>替换list中的元素</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]&#10;L[2]=&#39;Adam&#39;&#10;L[0]=&#39;Bart&#39;&#10;print L</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Bart&#39;, &#39;Lisa&#39;, &#39;Adam&#39;]</span><br></pre></td></tr></table></figure>
+<p><strong>创建tuple</strong><br>定义：tuple是另一种有序的列表，中文翻译为“ 元组 ”。tuple 和 list 非常类似，但是，tuple一旦创建完毕，就不能修改了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = (0,1,2,3,4,5,6,7,8,9)&#10;print t</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</span><br></pre></td></tr></table></figure>
+<p><strong>创建单元素tuple</strong></p>
+<p>tuple和list一样，可以包含 0 个、1个和任意多个元素。</p>
+<p>包含 0 个元素的 tuple，也就是空tuple，直接用 ()表示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = ()&#10;print t</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">()</span><br></pre></td></tr></table></figure>
+<p>创建包含1个元素的 tuple 呢？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = (1)&#10;print t</span><br></pre></td></tr></table></figure>
+<p>1?</p>
+<p>好像哪里不对！t 不是 tuple ，而是整数1。为什么呢？</p>
+<p>因为()既可以表示tuple，又可以作为括号表示运算时的优先级，结果 (1) 被Python解释器计算出结果 1，导致我们得到的不是tuple，而是整数 1。</p>
+<p>正是因为用()定义单元素的tuple有歧义，所以 Python 规定，单元素 tuple 要多加一个逗号“,”，这样就避免了歧义：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = (1,)&#10;print t</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1,)</span><br></pre></td></tr></table></figure>
+<p>Python在打印单元素tuple时，也自动添加了一个“,”，为了更明确地告诉你这是一个tuple。</p>
+<p>多元素 tuple 加不加这个额外的“,”效果是一样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; t = (1, 2, 3,)&#10;&#62;&#62;&#62; print t</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1, 2, 3)</span><br></pre></td></tr></table></figure>
+<p><strong>创建可变的tuple</strong></p>
+<p>前面我们看到了tuple一旦创建就不能修改。现在，我们来看一个“可变”的tuple：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; t = (&#39;a&#39;, &#39;b&#39;, [&#39;A&#39;, &#39;B&#39;])</span><br></pre></td></tr></table></figure>
+<p>注意到 t 有 3 个元素：’a’，’b’和一个list：[‘A’, ‘B’]。list作为一个整体是tuple的第3个元素。list对象可以通过 t[2] 拿到：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L = t[2]</span><br></pre></td></tr></table></figure>
+<p>然后，我们把list的两个元素改一改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L[0] = &#39;X&#39;&#10;&#62;&#62;&#62; L[1] = &#39;Y&#39;</span><br></pre></td></tr></table></figure>
+<p>再看看tuple的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; print t&#10;(&#39;a&#39;, &#39;b&#39;, [&#39;X&#39;, &#39;Y&#39;])</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -315,7 +395,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/test/" rel="tag">#test</a>
+            <a href="/tags/python/" rel="tag">#python</a>
           
         </div>
       
@@ -324,13 +404,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/25/python学习-变量与数据类型/" rel="next" title="python学习_变量与数据类型">
-                <i class="fa fa-chevron-left"></i> python学习_变量与数据类型
+              <a href="/2016/01/25/python学习-1-变量与数据类型/" rel="next" title="python学习(1)变量与数据类型">
+                <i class="fa fa-chevron-left"></i> python学习(1)变量与数据类型
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/01/25/python学习-3-条件判断和循环/" rel="prev" title="python学习(3)条件判断和循环">
+                python学习(3)条件判断和循环 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -356,8 +440,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/25/test/"
-           data-title="test" data-url="http://yoursite.com/2016/01/25/test/">
+      <div class="ds-thread" data-thread-key="2016/01/25/python学习-2-List和Tuple类型/"
+           data-title="python学习(2)List和Tuple类型" data-url="http://yoursite.com/2016/01/25/python学习-2-List和Tuple类型/">
       </div>
     
   </div>
@@ -402,7 +486,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -416,7 +500,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

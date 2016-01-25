@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python," />
 
 
 
@@ -57,19 +57,28 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="if
+1age = 20&amp;#10;if age &amp;#62;= 18:&amp;#10;    print &amp;#39;your age is&amp;#39;, age&amp;#10;    print &amp;#39;adult&amp;#39;&amp;#10;print &amp;#39;END&amp;#39;
+结果
+1your age is 20&amp;#10;adult&amp;#10;END
+注意:        Python代码的缩进规则。具有相同缩进的代">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/01/25/hello-world/index.html">
+<meta property="og:title" content="python学习(3)条件判断和循环">
+<meta property="og:url" content="http://yoursite.com/2016/01/25/python学习-3-条件判断和循环/index.html">
 <meta property="og:site_name" content="ichancer_coder">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-01-24T09:16:53.518Z">
+<meta property="og:description" content="if
+1age = 20&amp;#10;if age &amp;#62;= 18:&amp;#10;    print &amp;#39;your age is&amp;#39;, age&amp;#10;    print &amp;#39;adult&amp;#39;&amp;#10;print &amp;#39;END&amp;#39;
+结果
+1your age is 20&amp;#10;adult&amp;#10;END
+注意:        Python代码的缩进规则。具有相同缩进的代">
+<meta property="og:updated_time" content="2016-01-25T06:15:15.019Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="python学习(3)条件判断和循环">
+<meta name="twitter:description" content="if
+1age = 20&amp;#10;if age &amp;#62;= 18:&amp;#10;    print &amp;#39;your age is&amp;#39;, age&amp;#10;    print &amp;#39;adult&amp;#39;&amp;#10;print &amp;#39;END&amp;#39;
+结果
+1your age is 20&amp;#10;adult&amp;#10;END
+注意:        Python代码的缩进规则。具有相同缩进的代">
 
 
 
@@ -87,7 +96,7 @@ Quick">
   };
 </script>
 
-  <title> Hello World | ichancer_coder </title>
+  <title> python学习(3)条件判断和循环 | ichancer_coder </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +274,7 @@ Quick">
             
             
               
-                Hello World
+                python学习(3)条件判断和循环
               
             
           </h1>
@@ -277,7 +286,7 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-25T10:28:57+08:00" content="2016-01-25">
+            <time itemprop="dateCreated" datetime="2016-01-25T14:11:06+08:00" content="2016-01-25">
               2016-01-25
             </time>
           </span>
@@ -288,8 +297,8 @@ Quick">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/25/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/01/25/python学习-3-条件判断和循环/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/python学习-3-条件判断和循环/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -310,33 +319,70 @@ Quick">
       
 
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <a id="more"></a>
+<p><strong>if</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">age = 20&#10;if age &#62;= 18:&#10;    print &#39;your age is&#39;, age&#10;    print &#39;adult&#39;&#10;print &#39;END&#39;</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your age is 20&#10;adult&#10;END</span><br></pre></td></tr></table></figure>
+<p>注意:<br>        Python代码的缩进规则。具有相同缩进的代码被视为代码块，上面的3，4行 print 语句就构成一个代码块（但不包括第5行的print）。如果 if 语句判断为 True，就会执行这个代码块。</p>
+<p>缩进请严格按照Python的习惯写法：4个空格，不要使用Tab，更不要混合Tab和空格，否则很容易造成因为缩进引起的语法错误。</p>
+<p>注意: if 语句后接表达式，然后用:表示代码块开始。</p>
+<p>如果你在Python交互环境下敲代码，还要特别留意缩进，并且退出缩进需要多敲一行回车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">age = 20&#10;if age &#62;= 18:&#10;    print &#39;your age is&#39;, age&#10;    print &#39;adult&#39;</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your age is 20&#10;adult</span><br></pre></td></tr></table></figure>
+<p><strong>if-else</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">score = 55&#10;if score&#62;=60:&#10;    print &#39;passed&#39;&#10;else:&#10;    print &#39;failed&#39;&#10;    print &#39;aaa&#39;</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">failed&#10;aaa</span><br></pre></td></tr></table></figure>
+<p>注意：else后面要有:</p>
+<p><strong>if-elif-else</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">score = 85&#10;&#10;if score&#62;=90:&#10;    print &#39;excellent&#39;&#10;elif score&#62;=80:&#10;    print &#39;good&#39;&#10;elif score&#62;=60:&#10;    print &#39;passed&#39;&#10;else:&#10;    print &#39;failed&#39;</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">good</span><br></pre></td></tr></table></figure>
+<p><strong>for循环结构</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [75, 92, 59, 68]&#10;sum = 0.0&#10;for name in L:&#10;    sum+=name&#10;print sum</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">294.0</span><br></pre></td></tr></table></figure>
+<p><strong>while</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 1&#10;while x&#60;=100:&#10;    sum+=x&#10;    x+=2&#10;print sum</span><br></pre></td></tr></table></figure>
+<p>结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2500</span><br></pre></td></tr></table></figure></p>
+<p><strong>while-break</strong><br>用 for 循环或者 while 循环时，如果要在循环体内直接退出循环，可以使用 break 语句。</p>
+<p>利用 while True 无限循环配合 break 语句，计算 1 + 2 + 4 + 8 + 16 + … 的前20项的和。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 1&#10;n = 1&#10;while True:&#10;    if n&#62;20:&#10;        break&#10;    sum=sum+x&#10;    x=x*2&#10;    n=n+1&#10;&#10;print sum</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1048575</span><br></pre></td></tr></table></figure>
+<p><strong>continue</strong><br>在循环过程中，可以用break退出当前循环，还可以用continue跳过后续循环代码，继续下一次循环。</p>
+<p>对已有的计算 0 - 100 的while循环进行改造，通过增加 continue 语句，使得只计算奇数的和：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 0&#10;while True:&#10;    x = x + 1&#10;    if x &#62; 100:&#10;        break&#10;    if x%2==0:&#10;        continue&#10;    sum+=x&#10;print sum</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2500</span><br></pre></td></tr></table></figure>
+<p><strong>多重循环</strong><br>在循环内部，还可以嵌套循环，我们来看一个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#23545;100&#20197;&#20869;&#30340;&#20004;&#20301;&#25968;&#65292;&#35831;&#20351;&#29992;&#19968;&#20010;&#20004;&#37325;&#24490;&#29615;&#25171;&#21360;&#20986;&#25152;&#26377;&#21313;&#20301;&#25968;&#25968;&#23383;&#27604;&#20010;&#20301;&#25968;&#25968;&#23383;&#23567;&#30340;&#25968;&#65292;&#20363;&#22914;&#65292;23&#65288;2 &#60; 3&#65289;&#12290;&#10;&#10;for x in [1,2,3,4,5,6,7,8,9]:&#10;    for y in [0,1,2,3,4,5,6,7,8,9]:&#10;        if x&#60;y:&#10;            print x*10+y</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12&#10;13&#10;14&#10;15&#10;16&#10;17&#10;18&#10;19&#10;23&#10;24&#10;25&#10;26&#10;27&#10;28&#10;29&#10;34&#10;35&#10;36&#10;37&#10;38&#10;39&#10;45&#10;46&#10;47&#10;48&#10;49&#10;56&#10;57&#10;58&#10;59&#10;67&#10;68&#10;69&#10;78&#10;79&#10;89</span><br></pre></td></tr></table></figure>
       
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag">#python</a>
+          
+        </div>
       
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/01/25/python学习-2-List和Tuple类型/" rel="next" title="python学习(2)List和Tuple类型">
+                <i class="fa fa-chevron-left"></i> python学习(2)List和Tuple类型
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/25/python学习-1-变量与数据类型/" rel="prev" title="python学习(1)变量与数据类型">
-                python学习(1)变量与数据类型 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -362,8 +408,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/25/hello-world/"
-           data-title="Hello World" data-url="http://yoursite.com/2016/01/25/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/01/25/python学习-3-条件判断和循环/"
+           data-title="python学习(3)条件判断和循环" data-url="http://yoursite.com/2016/01/25/python学习-3-条件判断和循环/">
       </div>
     
   </div>
@@ -464,7 +510,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick_Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create_a_new_post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run_server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate_static_files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy_to_remote_sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
