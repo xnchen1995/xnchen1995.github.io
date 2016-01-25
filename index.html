@@ -224,7 +224,7 @@
     e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
   })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install', 'bEYAS3y2twz1xXY5-ByR','2.0.0');
+  _st('install', 'sLBHyphWQc9BzN7xBKVL','2.0.0');
 </script>
 
 
@@ -246,6 +246,15 @@
     
 
     
+    
+      
+      
+        
+        
+        
+      
+
+      
     
 
     
@@ -318,49 +327,13 @@
 
       
         
-          
-            <a id="more"></a>
-<p><strong>if</strong></p>
+          <p><strong>if</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">age = 20&#10;if age &#62;= 18:&#10;    print &#39;your age is&#39;, age&#10;    print &#39;adult&#39;&#10;print &#39;END&#39;</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your age is 20&#10;adult&#10;END</span><br></pre></td></tr></table></figure>
-<p>注意:<br>        Python代码的缩进规则。具有相同缩进的代码被视为代码块，上面的3，4行 print 语句就构成一个代码块（但不包括第5行的print）。如果 if 语句判断为 True，就会执行这个代码块。</p>
-<p>缩进请严格按照Python的习惯写法：4个空格，不要使用Tab，更不要混合Tab和空格，否则很容易造成因为缩进引起的语法错误。</p>
-<p>注意: if 语句后接表达式，然后用:表示代码块开始。</p>
-<p>如果你在Python交互环境下敲代码，还要特别留意缩进，并且退出缩进需要多敲一行回车：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">age = 20&#10;if age &#62;= 18:&#10;    print &#39;your age is&#39;, age&#10;    print &#39;adult&#39;</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your age is 20&#10;adult</span><br></pre></td></tr></table></figure>
-<p><strong>if-else</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">score = 55&#10;if score&#62;=60:&#10;    print &#39;passed&#39;&#10;else:&#10;    print &#39;failed&#39;&#10;    print &#39;aaa&#39;</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">failed&#10;aaa</span><br></pre></td></tr></table></figure>
-<p>注意：else后面要有:</p>
-<p><strong>if-elif-else</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">score = 85&#10;&#10;if score&#62;=90:&#10;    print &#39;excellent&#39;&#10;elif score&#62;=80:&#10;    print &#39;good&#39;&#10;elif score&#62;=60:&#10;    print &#39;passed&#39;&#10;else:&#10;    print &#39;failed&#39;</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">good</span><br></pre></td></tr></table></figure>
-<p><strong>for循环结构</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [75, 92, 59, 68]&#10;sum = 0.0&#10;for name in L:&#10;    sum+=name&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">294.0</span><br></pre></td></tr></table></figure>
-<p><strong>while</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 1&#10;while x&#60;=100:&#10;    sum+=x&#10;    x+=2&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2500</span><br></pre></td></tr></table></figure></p>
-<p><strong>while-break</strong><br>用 for 循环或者 while 循环时，如果要在循环体内直接退出循环，可以使用 break 语句。</p>
-<p>利用 while True 无限循环配合 break 语句，计算 1 + 2 + 4 + 8 + 16 + … 的前20项的和。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 1&#10;n = 1&#10;while True:&#10;    if n&#62;20:&#10;        break&#10;    sum=sum+x&#10;    x=x*2&#10;    n=n+1&#10;&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1048575</span><br></pre></td></tr></table></figure>
-<p><strong>continue</strong><br>在循环过程中，可以用break退出当前循环，还可以用continue跳过后续循环代码，继续下一次循环。</p>
-<p>对已有的计算 0 - 100 的while循环进行改造，通过增加 continue 语句，使得只计算奇数的和：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 0&#10;while True:&#10;    x = x + 1&#10;    if x &#62; 100:&#10;        break&#10;    if x%2==0:&#10;        continue&#10;    sum+=x&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2500</span><br></pre></td></tr></table></figure>
-<p><strong>多重循环</strong><br>在循环内部，还可以嵌套循环，我们来看一个例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#23545;100&#20197;&#20869;&#30340;&#20004;&#20301;&#25968;&#65292;&#35831;&#20351;&#29992;&#19968;&#20010;&#20004;&#37325;&#24490;&#29615;&#25171;&#21360;&#20986;&#25152;&#26377;&#21313;&#20301;&#25968;&#25968;&#23383;&#27604;&#20010;&#20301;&#25968;&#25968;&#23383;&#23567;&#30340;&#25968;&#65292;&#20363;&#22914;&#65292;23&#65288;2 &#60; 3&#65289;&#12290;&#10;&#10;for x in [1,2,3,4,5,6,7,8,9]:&#10;    for y in [0,1,2,3,4,5,6,7,8,9]:&#10;        if x&#60;y:&#10;            print x*10+y</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12&#10;13&#10;14&#10;15&#10;16&#10;17&#10;18&#10;19&#10;23&#10;24&#10;25&#10;26&#10;27&#10;28&#10;29&#10;34&#10;35&#10;36&#10;37&#10;38&#10;39&#10;45&#10;46&#10;47&#10;48&#10;49&#10;56&#10;57&#10;58&#10;59&#10;67&#10;68&#10;69&#10;78&#10;79&#10;89</span><br></pre></td></tr></table></figure>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/25/python学习-3-条件判断和循环/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -448,80 +421,15 @@
 
       
         
-          
-            <a id="more"></a>
-<p><strong>创建list</strong></p>
+          <p><strong>创建list</strong></p>
 <p>Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Andy&#39;,95.5,&#39;Lisa&#39;,85,&#39;Bart&#39;,59]&#10;print L</span><br></pre></td></tr></table></figure>
 <p>结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Andy&#39;, 95.5, &#39;Lisa&#39;, 85, &#39;Bart&#39;, 59]</span><br></pre></td></tr></table></figure></p>
-<p>一个元素也没有的list，就是空list：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">empty_list = []&#10;print empty_list</span><br></pre></td></tr></table></figure>
-<p>结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[]</span><br></pre></td></tr></table></figure></p>
-<p><strong>索引的方式访问</strong></p>
-<p>1.正序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [95.5,85,59]&#10;print L[0]&#10;print L[1]&#10;print L[2]&#10;print L[2]</span><br></pre></td></tr></table></figure></p>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">95.5&#10;85&#10;59&#10;59</span><br></pre></td></tr></table></figure>
-<p>2.逆序</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [95.5, 85, 59]&#10;print L[-1]&#10;print L[-2]&#10;print L[-3]&#10;print L[-4]</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">59&#10;85&#10;95.5</span><br></pre></td></tr></table></figure>
-<p><strong>list添加新元素</strong></p>
-<p>1.按索引位置插入insert()</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]&#10;L.insert(2, &#39;Paul&#39;)&#10;print L</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Paul&#39;, &#39;Bart&#39;]</span><br></pre></td></tr></table></figure>
-<p>2.直接插入在list的末尾</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]&#10;L.append(&#39;Paul&#39;)&#10;print L</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;, &#39;Paul&#39;]</span><br></pre></td></tr></table></figure>
-<p><strong>list删除元素</strong></p>
-<p>1.删除末尾元素（无参的pop()函数）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;, &#39;Paul&#39;]&#10;&#62;&#62;&#62; L.pop()&#10;&#62;&#62;&#62; print L</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]</span><br></pre></td></tr></table></figure>
-<p>2.删除索引的元素pop(index)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;, &#39;Paul&#39;]&#10;&#62;&#62;&#62; L.pop(2)</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]</span><br></pre></td></tr></table></figure>
-<p><strong>替换list中的元素</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [&#39;Adam&#39;, &#39;Lisa&#39;, &#39;Bart&#39;]&#10;L[2]=&#39;Adam&#39;&#10;L[0]=&#39;Bart&#39;&#10;print L</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Bart&#39;, &#39;Lisa&#39;, &#39;Adam&#39;]</span><br></pre></td></tr></table></figure>
-<p><strong>创建tuple</strong><br>定义：tuple是另一种有序的列表，中文翻译为“ 元组 ”。tuple 和 list 非常类似，但是，tuple一旦创建完毕，就不能修改了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = (0,1,2,3,4,5,6,7,8,9)&#10;print t</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</span><br></pre></td></tr></table></figure>
-<p><strong>创建单元素tuple</strong></p>
-<p>tuple和list一样，可以包含 0 个、1个和任意多个元素。</p>
-<p>包含 0 个元素的 tuple，也就是空tuple，直接用 ()表示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = ()&#10;print t</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">()</span><br></pre></td></tr></table></figure>
-<p>创建包含1个元素的 tuple 呢？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = (1)&#10;print t</span><br></pre></td></tr></table></figure>
-<p>1?</p>
-<p>好像哪里不对！t 不是 tuple ，而是整数1。为什么呢？</p>
-<p>因为()既可以表示tuple，又可以作为括号表示运算时的优先级，结果 (1) 被Python解释器计算出结果 1，导致我们得到的不是tuple，而是整数 1。</p>
-<p>正是因为用()定义单元素的tuple有歧义，所以 Python 规定，单元素 tuple 要多加一个逗号“,”，这样就避免了歧义：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">t = (1,)&#10;print t</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1,)</span><br></pre></td></tr></table></figure>
-<p>Python在打印单元素tuple时，也自动添加了一个“,”，为了更明确地告诉你这是一个tuple。</p>
-<p>多元素 tuple 加不加这个额外的“,”效果是一样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; t = (1, 2, 3,)&#10;&#62;&#62;&#62; print t</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1, 2, 3)</span><br></pre></td></tr></table></figure>
-<p><strong>创建可变的tuple</strong></p>
-<p>前面我们看到了tuple一旦创建就不能修改。现在，我们来看一个“可变”的tuple：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; t = (&#39;a&#39;, &#39;b&#39;, [&#39;A&#39;, &#39;B&#39;])</span><br></pre></td></tr></table></figure>
-<p>注意到 t 有 3 个元素：’a’，’b’和一个list：[‘A’, ‘B’]。list作为一个整体是tuple的第3个元素。list对象可以通过 t[2] 拿到：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L = t[2]</span><br></pre></td></tr></table></figure>
-<p>然后，我们把list的两个元素改一改：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; L[0] = &#39;X&#39;&#10;&#62;&#62;&#62; L[1] = &#39;Y&#39;</span><br></pre></td></tr></table></figure>
-<p>再看看tuple的内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;&#62; print t&#10;(&#39;a&#39;, &#39;b&#39;, [&#39;X&#39;, &#39;Y&#39;])</span><br></pre></td></tr></table></figure>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/25/python学习-2-List和Tuple类型/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -581,6 +489,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/脚本/" itemprop="url" rel="index">
+                    <span itemprop="name">脚本</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -609,46 +536,12 @@
 
       
         
-          
-            <a id="more"></a>
-<p><strong>数据类型</strong>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print 45678+0x12fd2&#9;&#9;&#9;&#9;#&#25972;&#24418;&#10;print &#34;Learn Python in imooc.&#34; &#9;&#9;#&#23383;&#31526;&#20018;&#10;print 100&#60;99&#9;&#9;&#9;&#9;#&#24067;&#23572;&#22411;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">123456&#10;Learn Python in imooc.&#10;False</span><br></pre></td></tr></table></figure>
-<p><strong>输出</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#input code&#10;print &#34;hello,python&#34;&#10;print &#34;hello,&#34;,&#34;python&#34;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello,python&#10;hello, python</span><br></pre></td></tr></table></figure>
-<p><strong>注释</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#hello</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure>
-<p><strong>字符串</strong></p>
-<ol>
-<li>普通字符串</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s = &#39;Python was started in 1989 by &#34;Guido&#34;.\nPython is free and easy to learn.&#39;&#10;print s</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python was started in 1989 by &#34;Guido&#34;.&#10;Python is free and easy to learn.</span><br></pre></td></tr></table></figure>
-<p>2.raw字符串与多行字符串(相当于原样输出)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print r&#39;&#39;&#39;&#34;To be, or not to be&#34;: that is the question.&#10;Whether it&#39;s nobler in the mind to suffer.&#39;&#39;&#39;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;To be, or not to be&#34;: that is the question.&#10;Whether it&#39;s nobler in the mind to suffer.</span><br></pre></td></tr></table></figure>
-<p><strong>整数和浮点数</strong></p>
-<p>和数学运算不同的地方是，Python的整数运算结果仍然是整数，浮点数运算结果仍然是浮点数<br><code>1 + 2    # ==&gt; 整数</code></p>
-<p><code>1.0+ 2.0    # ==&gt; 浮点数 3.0</code></p>
-<p>整形数和浮点数混合运算的结果就变成浮点</p>
-<p><code>1 + 2.0    # ==&gt; 浮点数 3.0</code></p>
-<p>要区分整数运算和浮点数运算呢？这是因为整数运算的结果永远是精确的，而浮点数运算的结果不一定精确，因为计算机内存再大，也无法精确表示出无限循环小数，比如 0.1 换成二进制表示就是无限循环小数。</p>
-<p>那整数的除法运算遇到除不尽的时候，结果难道不是浮点数吗？</p>
-<p>`11 / 4    # ==&gt; 2</p>
-<p>初学者惊讶的是，Python的整数除法，即使除不尽，结果仍然是整数，余数直接被扔掉。不过，Python提供了一个求余的运算 % 可以计算余数</p>
-<p><code>11 % 4    # ==&gt; 3</code></p>
-<p>我们要计算 11 / 4 的精确结果，按照“整数和浮点数混合运算的结果是浮点数”的法则，把两个数中的一个变成浮点数再运算就没问题了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">11.0 / 4    # ==&#62; 2.75</span><br></pre></td></tr></table></figure>
-<p><strong>布尔类型</strong></p>
-<p>与运算：只有两个布尔值都为 True 时，计算结果才为 True。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True and True   # ==&#62; True&#10;True and False   # ==&#62; False&#10;False and True   # ==&#62; False&#10;False and False   # ==&#62; False</span><br></pre></td></tr></table></figure>
-<p>或运算：只要有一个布尔值为 True，计算结果就是 True。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True or True   # ==&#62; True&#10;True or False   # ==&#62; True&#10;False or True   # ==&#62; True&#10;False or False   # ==&#62; False</span><br></pre></td></tr></table></figure>
-<p>非运算：把True变为False，或者把False变为True：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">not True   # ==&#62; False&#10;not False   # ==&#62; True</span><br></pre></td></tr></table></figure>
-
-          
+          <p><strong>数据类型</strong>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print 45678+0x12fd2&#9;&#9;&#9;&#9;#&#25972;&#24418;&#10;print &#34;Learn Python in imooc.&#34; &#9;&#9;#&#23383;&#31526;&#20018;&#10;print 100&#60;99&#9;&#9;&#9;&#9;#&#24067;&#23572;&#22411;</span><br></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/25/python学习-1-变量与数据类型/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -815,7 +708,7 @@
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
