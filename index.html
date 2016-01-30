@@ -346,8 +346,7 @@
 
       
         
-          
-            <h1 id="android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29"><a href="#android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29" class="headerlink" title="android 控件和布局(学习和理解)"></a>android 控件和布局(学习和理解)</h1><p>安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。</p>
+          <h1 id="android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29"><a href="#android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29" class="headerlink" title="android 控件和布局(学习和理解)"></a>android 控件和布局(学习和理解)</h1><p>安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。</p>
 <h2 id="View__u63A7_u4EF6"><a href="#View__u63A7_u4EF6" class="headerlink" title="View 控件"></a>View 控件</h2><h3 id="TextView_u4E0EEditText"><a href="#TextView_u4E0EEditText" class="headerlink" title="TextView与EditText"></a>TextView与EditText</h3><pre><code>&lt;TextView
     android:id=&quot;@+id/TextView1&quot;
     android:layout_width=&quot;wrap_content&quot;
@@ -373,64 +372,11 @@
 <blockquote>
 <p>wrap_content:自适应文字内容<br>fill_parent:2.3版本之前用来充满父容器<br>match_parent:2.3版本之后用的充满父容器</p>
 </blockquote>
-<h3 id="ImageView"><a href="#ImageView" class="headerlink" title="ImageView"></a>ImageView</h3><p>用来显示图片的控件</p>
-<pre><code>&lt;ImageView
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:src=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
-
-&lt;ImageView
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:background=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
-</code></pre><blockquote>
-<p> src:将图片设置为图片，但是不会随控件大小变化<br> background:设置背景图片，会随控件大小变化</p>
-</blockquote>
-<h3 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h3><pre><code>&lt;Button
-    android:id=&quot;@+id/Button1&quot;
-    android:layout_width=&quot;wrap_content&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:text=&quot;点击&quot;
-    /&gt;
-</code></pre><p>Button 要实现按键响应要先设置监听事件setOnClickListener事件，有三种方式来实现onClick()方法，</p>
-<h4 id="u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6"><a href="#u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6" class="headerlink" title="匿名内部类实现onclick事件"></a>匿名内部类实现onclick事件</h4><pre><code>Button btn1= (Button)findViewById(R.id.Button1);
-btn1.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Log.i(&quot;tag&quot;, &quot;匿名内部类&quot;);
-    }
-});
-</code></pre><h4 id="u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0"><a href="#u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0" class="headerlink" title="通过一个外部类来实现"></a>通过一个外部类来实现</h4><blockquote>
-<p>设置外部类</p>
-</blockquote>
-<pre><code>class MyOnClickListener implements View.OnClickListener {
-
-    @Override
-    public void onClick(View v) {
-        Log.i(&quot;tag&quot;, &quot;父类的onclick事件2&quot;);
-
-    }
-}
-</code></pre><blockquote>
-<p>activity类中设置监听事件(外部类重写可以添加一些共有的代码段，在设置监听事件同时可以设置自己的代码段)</p>
-</blockquote>
-<pre><code>Button btn2=(Button)findViewById(R.id.Button2);
-        btn2.setOnClickListener(new MyOnClickListener(){
-            @Override
-            public  void onClick(View v){
-                super.onClick(v);
-                Toast.makeText(MainActivity.this,&quot;btn1要执行的逻辑&quot;,Toast.LENGTH_LONG).show();
-            }
-        });
-</code></pre><h4 id="u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6"><a href="#u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6" class="headerlink" title="通过实现一个接口的方法实现监听事件"></a>通过实现一个接口的方法实现监听事件</h4><blockquote>
-<p>先让activity类来实现OnClickListener接口，然后重写onClick()方法</p>
-</blockquote>
-<pre><code>Button btn3= (Button)findViewById(R.id.Button3);
-btn3.setOnClickListener(this);
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/30/android学习-控件/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
