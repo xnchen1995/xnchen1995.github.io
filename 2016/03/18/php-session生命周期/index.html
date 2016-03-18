@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="android," />
+  <meta name="keywords" content="php," />
 
 
 
@@ -57,28 +57,22 @@
 
 
 
-<meta name="description" content="android 控件和布局(学习和理解)安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。
-View 控件TextView与EditText&amp;lt;TextView
-    android:id=&amp;quot;@+id/TextView1&amp;quot;
-    android:layout_width=&amp;quot;wrap_content&amp;quot;
-    android:la">
+<meta name="description" content="如何严格限制session在30分钟后过期！1.设置客户端cookie的lifetime为30分钟；2.设置session的最大存活周期也为30分钟；3.为每个session值加入时间戳，然后在程序调用时进行判断；
+至于为什么，我们首先来了解下php中session的基本原理：
+PHP中的session有效期默认是1440秒（24分钟），也就是说，客户端超过24分钟没有刷新，当前session就会">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android学习--控件">
-<meta property="og:url" content="http://yoursite.com/2016/01/30/android学习-控件/index.html">
+<meta property="og:title" content="php session生命周期">
+<meta property="og:url" content="http://yoursite.com/2016/03/18/php-session生命周期/index.html">
 <meta property="og:site_name" content="ichancer_coder">
-<meta property="og:description" content="android 控件和布局(学习和理解)安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。
-View 控件TextView与EditText&amp;lt;TextView
-    android:id=&amp;quot;@+id/TextView1&amp;quot;
-    android:layout_width=&amp;quot;wrap_content&amp;quot;
-    android:la">
-<meta property="og:updated_time" content="2016-01-30T11:24:00.795Z">
+<meta property="og:description" content="如何严格限制session在30分钟后过期！1.设置客户端cookie的lifetime为30分钟；2.设置session的最大存活周期也为30分钟；3.为每个session值加入时间戳，然后在程序调用时进行判断；
+至于为什么，我们首先来了解下php中session的基本原理：
+PHP中的session有效期默认是1440秒（24分钟），也就是说，客户端超过24分钟没有刷新，当前session就会">
+<meta property="og:updated_time" content="2016-03-18T07:20:40.590Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android学习--控件">
-<meta name="twitter:description" content="android 控件和布局(学习和理解)安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。
-View 控件TextView与EditText&amp;lt;TextView
-    android:id=&amp;quot;@+id/TextView1&amp;quot;
-    android:layout_width=&amp;quot;wrap_content&amp;quot;
-    android:la">
+<meta name="twitter:title" content="php session生命周期">
+<meta name="twitter:description" content="如何严格限制session在30分钟后过期！1.设置客户端cookie的lifetime为30分钟；2.设置session的最大存活周期也为30分钟；3.为每个session值加入时间戳，然后在程序调用时进行判断；
+至于为什么，我们首先来了解下php中session的基本原理：
+PHP中的session有效期默认是1440秒（24分钟），也就是说，客户端超过24分钟没有刷新，当前session就会">
 
 
 
@@ -96,7 +90,7 @@ View 控件TextView与EditText&amp;lt;TextView
   };
 </script>
 
-  <title> android学习--控件 | ichancer_coder </title>
+  <title> php session生命周期 | ichancer_coder </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -274,7 +268,7 @@ View 控件TextView与EditText&amp;lt;TextView
             
             
               
-                android学习--控件
+                php session生命周期
               
             
           </h1>
@@ -286,8 +280,8 @@ View 控件TextView与EditText&amp;lt;TextView
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-30T15:45:54+08:00" content="2016-01-30">
-              2016-01-30
+            <time itemprop="dateCreated" datetime="2016-03-18T15:15:34+08:00" content="2016-03-18">
+              2016-03-18
             </time>
           </span>
 
@@ -300,8 +294,8 @@ View 控件TextView与EditText&amp;lt;TextView
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/安卓/" itemprop="url" rel="index">
-                    <span itemprop="name">安卓</span>
+                  <a href="/categories/后台/" itemprop="url" rel="index">
+                    <span itemprop="name">后台</span>
                   </a>
                 </span>
 
@@ -316,8 +310,8 @@ View 控件TextView与EditText&amp;lt;TextView
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/30/android学习-控件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/30/android学习-控件/" itemprop="commentsCount"></span>
+                <a href="/2016/03/18/php-session生命周期/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/18/php-session生命周期/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -338,94 +332,11 @@ View 控件TextView与EditText&amp;lt;TextView
       
 
       
-        <h1 id="android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29"><a href="#android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29" class="headerlink" title="android 控件和布局(学习和理解)"></a>android 控件和布局(学习和理解)</h1><p>安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。</p>
-<h2 id="View__u63A7_u4EF6"><a href="#View__u63A7_u4EF6" class="headerlink" title="View 控件"></a>View 控件</h2><h3 id="TextView_u4E0EEditText"><a href="#TextView_u4E0EEditText" class="headerlink" title="TextView与EditText"></a>TextView与EditText</h3><pre><code>&lt;TextView
-    android:id=&quot;@+id/TextView1&quot;
-    android:layout_width=&quot;wrap_content&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:text=&quot;haha&quot;
-    android:textSize=&quot;24dp&quot;
-    android:textColor=&quot;@color/white&quot;
-    android:background=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
+        <p>如何严格限制session在30分钟后过期！<br>1.设置客户端cookie的lifetime为30分钟；<br>2.设置session的最大存活周期也为30分钟；<br>3.为每个session值加入时间戳，然后在程序调用时进行判断；</p>
+<p>至于为什么，我们首先来了解下php中session的基本原理：</p>
+<p>PHP中的session有效期默认是1440秒（24分钟），也就是说，客户端超过24分钟没有刷新，当前session就会失效。当然如果用户关闭了浏览器，会话也就结束了，Session自然也不存在了！<br>大家知道，Session储存在服务器端，根据客户端提供的SessionID来得到这个用户的文件，然后读取文件，取得变量的值，SessionID可以使用客户端的Cookie或者Http1.1协议的<br>Query_String（就是访问的URL的“?”后面的部分）来传送给服务器，然后服务器读取Session的目录……<br>要控制Session的生命周期，首先我们需要了解一下php.ini关于Session的相关设置（打开php.ini文件，在“[Session]”部分）：<br>1、session.use_cookies：默认的值是“1”，代表SessionID使用Cookie来传递，反之就是使用Query_String来传递；<br>2、session.name：这个就是SessionID储存的变量名称，可能是Cookie，也可能是Query_String来传递，默认值是“PHPSESSID”；<br>3、session.cookie_lifetime：这个代表SessionID在客户端Cookie储存的时间，默认是0，代表浏览器一关闭SessionID就作废……就是因为这个所以Session不能永久使用！<br>4、session.gc_maxlifetime：这个是Session数据在服务器端储存的时间，如果超过这个时间，那么Session数据就自动删除！<br>还有很多的设置，不过和本文相关的就是这些了，下面开始讲如何设置Session的存活周期。<br>前面说过，服务器通过SessionID来读取Session的数据，但是一般浏览器传送的SessionID在浏览器关闭后就没有了，那么我们只需要人为的设置SessionID并且保存下来，不就可以……<br>如果你拥有服务器的操作权限，那么设置这个非常非常的简单，只是需要进行如下的步骤：<br>1、把“session.use_cookies”设置为1，使用Cookie来储存SessionID，不过默认就是1，一般不用修改；<br>2、把“session.cookie_lifetime”改为你需要设置的时间（比如一个小时，就可以设置为3600，以秒为单位）;<br>3、把“session.gc_maxlifetime”设置为和“session.cookie_lifetime”一样的时间；<br>在PHP的文档中明确指出，设定session有效期的参数是session.gc_maxlifetime。可以在php.ini文件中，或者通过ini_set()函数来修改这一参数。问题在于，经过多次测试，修改这个<br>参数基本不起作用，session有效期仍然保持24分钟的默认值。<br>由于PHP的工作机制，它并没有一个daemon线程，来定时地扫描session信息并判断其是否失效。当一个有效请求发生时，PHP会根据全局变量<br>session.gc_probability/session.gc_divisor（同样可以通过php.ini或者ini_set()函数来修改）的值，来决定是否启动一个GC（Garbage Collector）。<br>默认情况下，session.gc_probability ＝ 1，session.gc_divisor ＝100，也就是说有1%的可能性会启动GC。GC的工作，就是扫描所有的session信息，用当前时间减去session的最后修<br>改时间（modified date），同session.gc_maxlifetime参数进行比较，如果生存时间已经超过gc_maxlifetime，就把该session删除。<br>到此为止，工作一切正常。那为什么会发生gc_maxlifetime无效的情况呢？<br>在默认情况下，session信息会以文本文件的形式，被保存在系统的临时文件目录中。在Linux下，这一路径通常为\tmp，在 Windows下通常为C:\Windows\Temp。当服务器上有多个PHP应<br>用时，它们会把自己的session文件都保存在同一个目录中。同样地，这些PHP应用也会按一定机率启动GC，扫描所有的session文件。<br>问题在于，GC在工作时，并不会区分不同站点的session。举例言之，站点A的gc_maxlifetime设置为2小时，站点B的 gc_maxlifetime设置为默认的24分钟。当站点B的GC启动时，它会扫<br>描公用的临时文件目录，把所有超过24分钟的session文件全部删除掉，而不管它们来自于站点A或B。这样，站点A的gc_maxlifetime设置就形同虚设了。<br>找到问题所在，解决起来就很简单了。修改session.save_path参数，或者使用session_save_path()函数，把保存session的目录指向一个专用的目录，gc_maxlifetime参数工作正常了。<br>还有一个问题就是，gc_maxlifetime只能保证session生存的最短时间，并不能够保存在超过这一时间之后session信息立即会得到删除。因为GC是按机率启动的，可能在某一个长时间内<br>都没有被启动，那么大量的session在超过gc_maxlifetime以后仍然会有效。<br>解决这个问题的一个方法是，把session.gc_probability/session.gc_divisor的机率提高，如果提到100%，就会彻底解决这个问题，但显然会对性能造成严重的影响。另一个方法是自己<br>在代码中判断当前session的生存时间，如果超出了 gc_maxlifetime，就清空当前session。</p>
+<p>（完整内容）原文地址：<a href="http://www.91xueke.com/2012/08/01/83.htm" target="_blank" rel="external">http://www.91xueke.com/2012/08/01/83.htm</a></p>
 
-&lt;EditText
-    android:id=&quot;@+id/EditText1&quot;
-    android:layout_width=&quot;wrap_content&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:textSize=&quot;24dp&quot;
-    android:text=&quot;&quot;
-    android:textColor=&quot;@color/white&quot;
-    android:background=&quot;@mipmap/ic_launcher&quot;
-    android:hint=&quot;请输入&quot;
-    android:inputType=&quot;date&quot;
-    /&gt;
-</code></pre><p>layout_width:</p>
-<blockquote>
-<p>wrap_content:自适应文字内容<br>fill_parent:2.3版本之前用来充满父容器<br>match_parent:2.3版本之后用的充满父容器</p>
-</blockquote>
-<a id="more"></a>
-<h3 id="ImageView"><a href="#ImageView" class="headerlink" title="ImageView"></a>ImageView</h3><p>用来显示图片的控件</p>
-<pre><code>&lt;ImageView
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:src=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
-
-&lt;ImageView
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:background=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
-</code></pre><blockquote>
-<p> src:将图片设置为图片，但是不会随控件大小变化<br> background:设置背景图片，会随控件大小变化</p>
-</blockquote>
-<h3 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h3><pre><code>&lt;Button
-    android:id=&quot;@+id/Button1&quot;
-    android:layout_width=&quot;wrap_content&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:text=&quot;点击&quot;
-    /&gt;
-</code></pre><p>Button 要实现按键响应要先设置监听事件setOnClickListener事件，有三种方式来实现onClick()方法，</p>
-<h4 id="u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6"><a href="#u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6" class="headerlink" title="匿名内部类实现onclick事件"></a>匿名内部类实现onclick事件</h4><pre><code>Button btn1= (Button)findViewById(R.id.Button1);
-btn1.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Log.i(&quot;tag&quot;, &quot;匿名内部类&quot;);
-    }
-});
-</code></pre><h4 id="u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0"><a href="#u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0" class="headerlink" title="通过一个外部类来实现"></a>通过一个外部类来实现</h4><blockquote>
-<p>设置外部类</p>
-</blockquote>
-<pre><code>class MyOnClickListener implements View.OnClickListener {
-
-    @Override
-    public void onClick(View v) {
-        Log.i(&quot;tag&quot;, &quot;父类的onclick事件2&quot;);
-
-    }
-}
-</code></pre><blockquote>
-<p>activity类中设置监听事件(外部类重写可以添加一些共有的代码段，在设置监听事件同时可以设置自己的代码段)</p>
-</blockquote>
-<pre><code>Button btn2=(Button)findViewById(R.id.Button2);
-        btn2.setOnClickListener(new MyOnClickListener(){
-            @Override
-            public  void onClick(View v){
-                super.onClick(v);
-                Toast.makeText(MainActivity.this,&quot;btn1要执行的逻辑&quot;,Toast.LENGTH_LONG).show();
-            }
-        });
-</code></pre><h4 id="u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6"><a href="#u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6" class="headerlink" title="通过实现一个接口的方法实现监听事件"></a>通过实现一个接口的方法实现监听事件</h4><blockquote>
-<p>先让activity类来实现OnClickListener接口，然后重写onClick()方法</p>
-</blockquote>
-<pre><code>Button btn3= (Button)findViewById(R.id.Button3);
-btn3.setOnClickListener(this);
-</code></pre><h2 id="u4E94_u5927_u5E03_u5C40"><a href="#u4E94_u5927_u5E03_u5C40" class="headerlink" title="五大布局"></a>五大布局</h2><h3 id="LinearLayout_u7EBF_u6027_u5E03_u5C40"><a href="#LinearLayout_u7EBF_u6027_u5E03_u5C40" class="headerlink" title="LinearLayout线性布局"></a>LinearLayout线性布局</h3><p>布局：<br>线性布局有两个相对重要的属性<br>android:orientation=”vertical”   //(vertical,horizontal垂直和水平)，可以决定其子类空间的排布方式。</p>
-<p>android:gravity=”right|bottom”   //可以或起来写 右下角<br>//决定布局下子类的xy位置</p>
-<p>子类：<br>android:layout_gravity=”bottom”<br>//指本身在父容器的xy的一个位置</p>
-<p>android:layout_weight=”1”<br>//指本身控件占父容器的一个比例，如果子类在宽度的方向上扩展，即android:layout_width=”wrap_content”时比例是正比例，如果是android:layout_width=”match_content”则为反比例</p>
-<h3 id="RelativeLayout__u76F8_u5BF9_u5E03_u5C40"><a href="#RelativeLayout__u76F8_u5BF9_u5E03_u5C40" class="headerlink" title="RelativeLayout 相对布局"></a>RelativeLayout 相对布局</h3><h3 id="FrameLayout__u5E27_u5E03_u5C40"><a href="#FrameLayout__u5E27_u5E03_u5C40" class="headerlink" title="FrameLayout 帧布局"></a>FrameLayout 帧布局</h3><h3 id="AbsoluteLayout__u7EDD_u5BF9_u5E03_u5C40"><a href="#AbsoluteLayout__u7EDD_u5BF9_u5E03_u5C40" class="headerlink" title="AbsoluteLayout 绝对布局"></a>AbsoluteLayout 绝对布局</h3><h3 id="TableLayout__u7F51_u683C_u5E03_u5C40"><a href="#TableLayout__u7F51_u683C_u5E03_u5C40" class="headerlink" title="TableLayout 网格布局"></a>TableLayout 网格布局</h3>
       
     </div>
 
@@ -433,7 +344,7 @@ btn3.setOnClickListener(this);
       
         <div class="post-tags">
           
-            <a href="/tags/android/" rel="tag">#android</a>
+            <a href="/tags/php/" rel="tag">#php</a>
           
         </div>
       
@@ -442,17 +353,13 @@ btn3.setOnClickListener(this);
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/25/python学习-3-条件判断和循环/" rel="next" title="python学习(3)条件判断和循环">
-                <i class="fa fa-chevron-left"></i> python学习(3)条件判断和循环
+              <a href="/2016/01/30/android学习-控件/" rel="next" title="android学习--控件">
+                <i class="fa fa-chevron-left"></i> android学习--控件
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/18/php-session生命周期/" rel="prev" title="php session生命周期">
-                php session生命周期 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -478,8 +385,8 @@ btn3.setOnClickListener(this);
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/30/android学习-控件/"
-           data-title="android学习--控件" data-url="http://yoursite.com/2016/01/30/android学习-控件/">
+      <div class="ds-thread" data-thread-key="2016/03/18/php-session生命周期/"
+           data-title="php session生命周期" data-url="http://yoursite.com/2016/03/18/php-session生命周期/">
       </div>
     
   </div>
@@ -580,7 +487,7 @@ btn3.setOnClickListener(this);
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29"><span class="nav-number">1.</span> <span class="nav-text">android 控件和布局(学习和理解)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#View__u63A7_u4EF6"><span class="nav-number">1.1.</span> <span class="nav-text">View 控件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TextView_u4E0EEditText"><span class="nav-number">1.1.1.</span> <span class="nav-text">TextView与EditText</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ImageView"><span class="nav-number">1.1.2.</span> <span class="nav-text">ImageView</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Button"><span class="nav-number">1.1.3.</span> <span class="nav-text">Button</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">匿名内部类实现onclick事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">通过一个外部类来实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">通过实现一个接口的方法实现监听事件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E94_u5927_u5E03_u5C40"><span class="nav-number">1.2.</span> <span class="nav-text">五大布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LinearLayout_u7EBF_u6027_u5E03_u5C40"><span class="nav-number">1.2.1.</span> <span class="nav-text">LinearLayout线性布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RelativeLayout__u76F8_u5BF9_u5E03_u5C40"><span class="nav-number">1.2.2.</span> <span class="nav-text">RelativeLayout 相对布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FrameLayout__u5E27_u5E03_u5C40"><span class="nav-number">1.2.3.</span> <span class="nav-text">FrameLayout 帧布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AbsoluteLayout__u7EDD_u5BF9_u5E03_u5C40"><span class="nav-number">1.2.4.</span> <span class="nav-text">AbsoluteLayout 绝对布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TableLayout__u7F51_u683C_u5E03_u5C40"><span class="nav-number">1.2.5.</span> <span class="nav-text">TableLayout 网格布局</span></a></li></ol></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
