@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="android," />
+  <meta name="keywords" content="mysql," />
 
 
 
@@ -57,28 +57,22 @@
 
 
 
-<meta name="description" content="android 控件和布局(学习和理解)安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。
-View 控件TextView与EditText&amp;lt;TextView
-    android:id=&amp;quot;@+id/TextView1&amp;quot;
-    android:layout_width=&amp;quot;wrap_content&amp;quot;
-    android:la">
+<meta name="description" content="在Mysql中创建外键时，经常会遇到问题而失败，这是因为Mysql中还有很多细节需要我们去留意，我自己总结并查阅资料后列出了以下几种常见原因。
+
+两个字段的类型或者大小不严格匹配。例如，如果一个是int(10)，那么外键也必须设置成int(10)，而不是int(11)，也不能是tinyint。另外，你还必须确定两个字段是否一个为 signed，而另一个又是unsigned（即：无符号），这两字段必">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android学习--控件">
-<meta property="og:url" content="http://yoursite.com/2016/01/30/android学习-控件/index.html">
+<meta property="og:title" content="Mysql无法创建外键的原因">
+<meta property="og:url" content="http://yoursite.com/2016/04/15/Mysql无法创建外键的原因/index.html">
 <meta property="og:site_name" content="ichancer_coder">
-<meta property="og:description" content="android 控件和布局(学习和理解)安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。
-View 控件TextView与EditText&amp;lt;TextView
-    android:id=&amp;quot;@+id/TextView1&amp;quot;
-    android:layout_width=&amp;quot;wrap_content&amp;quot;
-    android:la">
-<meta property="og:updated_time" content="2016-01-30T11:24:00.795Z">
+<meta property="og:description" content="在Mysql中创建外键时，经常会遇到问题而失败，这是因为Mysql中还有很多细节需要我们去留意，我自己总结并查阅资料后列出了以下几种常见原因。
+
+两个字段的类型或者大小不严格匹配。例如，如果一个是int(10)，那么外键也必须设置成int(10)，而不是int(11)，也不能是tinyint。另外，你还必须确定两个字段是否一个为 signed，而另一个又是unsigned（即：无符号），这两字段必">
+<meta property="og:updated_time" content="2016-04-15T15:43:01.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android学习--控件">
-<meta name="twitter:description" content="android 控件和布局(学习和理解)安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。
-View 控件TextView与EditText&amp;lt;TextView
-    android:id=&amp;quot;@+id/TextView1&amp;quot;
-    android:layout_width=&amp;quot;wrap_content&amp;quot;
-    android:la">
+<meta name="twitter:title" content="Mysql无法创建外键的原因">
+<meta name="twitter:description" content="在Mysql中创建外键时，经常会遇到问题而失败，这是因为Mysql中还有很多细节需要我们去留意，我自己总结并查阅资料后列出了以下几种常见原因。
+
+两个字段的类型或者大小不严格匹配。例如，如果一个是int(10)，那么外键也必须设置成int(10)，而不是int(11)，也不能是tinyint。另外，你还必须确定两个字段是否一个为 signed，而另一个又是unsigned（即：无符号），这两字段必">
 
 
 
@@ -96,7 +90,7 @@ View 控件TextView与EditText&amp;lt;TextView
   };
 </script>
 
-  <title> android学习--控件 | ichancer_coder </title>
+  <title> Mysql无法创建外键的原因 | ichancer_coder </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -274,7 +268,7 @@ View 控件TextView与EditText&amp;lt;TextView
             
             
               
-                android学习--控件
+                Mysql无法创建外键的原因
               
             
           </h1>
@@ -286,38 +280,19 @@ View 控件TextView与EditText&amp;lt;TextView
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-30T15:45:54+08:00" content="2016-01-30">
-              2016-01-30
+            <time itemprop="dateCreated" datetime="2016-04-15T23:40:04+08:00" content="2016-04-15">
+              2016-04-15
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/安卓/" itemprop="url" rel="index">
-                    <span itemprop="name">安卓</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/30/android学习-控件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/30/android学习-控件/" itemprop="commentsCount"></span>
+                <a href="/2016/04/15/Mysql无法创建外键的原因/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/15/Mysql无法创建外键的原因/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -338,94 +313,20 @@ View 控件TextView与EditText&amp;lt;TextView
       
 
       
-        <h1 id="android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29"><a href="#android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29" class="headerlink" title="android 控件和布局(学习和理解)"></a>android 控件和布局(学习和理解)</h1><p>安卓中每个控件可以简单的看成一个View，而布局则是ViewGroup。</p>
-<h2 id="View__u63A7_u4EF6"><a href="#View__u63A7_u4EF6" class="headerlink" title="View 控件"></a>View 控件</h2><h3 id="TextView_u4E0EEditText"><a href="#TextView_u4E0EEditText" class="headerlink" title="TextView与EditText"></a>TextView与EditText</h3><pre><code>&lt;TextView
-    android:id=&quot;@+id/TextView1&quot;
-    android:layout_width=&quot;wrap_content&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:text=&quot;haha&quot;
-    android:textSize=&quot;24dp&quot;
-    android:textColor=&quot;@color/white&quot;
-    android:background=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
+        <p>在Mysql中创建外键时，经常会遇到问题而失败，这是因为Mysql中还有很多细节需要我们去留意，我自己总结并查阅资料后列出了以下几种常见原因。</p>
+<ol>
+<li>两个字段的类型或者大小不严格匹配。例如，如果一个是int(10)，那么外键也必须设置成int(10)，而不是int(11)，也不能是tinyint。另外，你还必须确定两个字段是否一个为 signed，而另一个又是unsigned（即：无符号），这两字段必须严格地一致匹配，更多关于signed和unsigned的信息，请参阅：<a href="http://www.verysimple.com/blog/?p=57" target="_blank" rel="external">http://www.verysimple.com/blog/?p=57</a></li>
+<li>试图设置外键的字段没有建立起索引，或者不是一个primary key（主键）。如果其中一个不是primary key的话，你必须先为它创建一个索引。</li>
+<li>其中一个或者两个表是MyISAM引擎的表。若想要使用外键约束，表必须是InnoDB引擎（实际上，如果两个表都是MyISAM 引擎的，这个错误根本不会发生，但也不会产生外键，只会建立索引）你需要检查表的引擎类型。</li>
+<li>外键的名字不能重复。你应该检查你的数据库以确保外健名字是唯一的，或者你在键名后面加上几个随机的字符以测试是否是这个原因。</li>
+<li>你可能设置了ON DELETE SET NULL，但是相关的键的字段又设置成了NOTS NULL值。你可能通过修改cascade的属性值或者把字段属性设置成allow null来解决。</li>
+<li>请确定你的Charset和Collate选项在表级和字段级上的一致。</li>
+<li>你可能设置为外键设置了一个默认值，如default=0。</li>
+<li>ALTER声明中有语法错误</li>
+</ol>
+<p>当出现错误时，仔细检查数据库表和字段的设计。我更建议大家尽量使用工具来设计和创建数据库，这样能减少出错的概率。</p>
+<p>转载来自<a href="http://blog.csdn.net/wangpeng047/article/details/19624351" target="_blank" rel="external">http://blog.csdn.net/wangpeng047/article/details/19624351</a></p>
 
-&lt;EditText
-    android:id=&quot;@+id/EditText1&quot;
-    android:layout_width=&quot;wrap_content&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:textSize=&quot;24dp&quot;
-    android:text=&quot;&quot;
-    android:textColor=&quot;@color/white&quot;
-    android:background=&quot;@mipmap/ic_launcher&quot;
-    android:hint=&quot;请输入&quot;
-    android:inputType=&quot;date&quot;
-    /&gt;
-</code></pre><p>layout_width:</p>
-<blockquote>
-<p>wrap_content:自适应文字内容<br>fill_parent:2.3版本之前用来充满父容器<br>match_parent:2.3版本之后用的充满父容器</p>
-</blockquote>
-<a id="more"></a>
-<h3 id="ImageView"><a href="#ImageView" class="headerlink" title="ImageView"></a>ImageView</h3><p>用来显示图片的控件</p>
-<pre><code>&lt;ImageView
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:src=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
-
-&lt;ImageView
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:background=&quot;@mipmap/ic_launcher&quot;
-    /&gt;
-</code></pre><blockquote>
-<p> src:将图片设置为图片，但是不会随控件大小变化<br> background:设置背景图片，会随控件大小变化</p>
-</blockquote>
-<h3 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h3><pre><code>&lt;Button
-    android:id=&quot;@+id/Button1&quot;
-    android:layout_width=&quot;wrap_content&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:text=&quot;点击&quot;
-    /&gt;
-</code></pre><p>Button 要实现按键响应要先设置监听事件setOnClickListener事件，有三种方式来实现onClick()方法，</p>
-<h4 id="u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6"><a href="#u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6" class="headerlink" title="匿名内部类实现onclick事件"></a>匿名内部类实现onclick事件</h4><pre><code>Button btn1= (Button)findViewById(R.id.Button1);
-btn1.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Log.i(&quot;tag&quot;, &quot;匿名内部类&quot;);
-    }
-});
-</code></pre><h4 id="u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0"><a href="#u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0" class="headerlink" title="通过一个外部类来实现"></a>通过一个外部类来实现</h4><blockquote>
-<p>设置外部类</p>
-</blockquote>
-<pre><code>class MyOnClickListener implements View.OnClickListener {
-
-    @Override
-    public void onClick(View v) {
-        Log.i(&quot;tag&quot;, &quot;父类的onclick事件2&quot;);
-
-    }
-}
-</code></pre><blockquote>
-<p>activity类中设置监听事件(外部类重写可以添加一些共有的代码段，在设置监听事件同时可以设置自己的代码段)</p>
-</blockquote>
-<pre><code>Button btn2=(Button)findViewById(R.id.Button2);
-        btn2.setOnClickListener(new MyOnClickListener(){
-            @Override
-            public  void onClick(View v){
-                super.onClick(v);
-                Toast.makeText(MainActivity.this,&quot;btn1要执行的逻辑&quot;,Toast.LENGTH_LONG).show();
-            }
-        });
-</code></pre><h4 id="u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6"><a href="#u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6" class="headerlink" title="通过实现一个接口的方法实现监听事件"></a>通过实现一个接口的方法实现监听事件</h4><blockquote>
-<p>先让activity类来实现OnClickListener接口，然后重写onClick()方法</p>
-</blockquote>
-<pre><code>Button btn3= (Button)findViewById(R.id.Button3);
-btn3.setOnClickListener(this);
-</code></pre><h2 id="u4E94_u5927_u5E03_u5C40"><a href="#u4E94_u5927_u5E03_u5C40" class="headerlink" title="五大布局"></a>五大布局</h2><h3 id="LinearLayout_u7EBF_u6027_u5E03_u5C40"><a href="#LinearLayout_u7EBF_u6027_u5E03_u5C40" class="headerlink" title="LinearLayout线性布局"></a>LinearLayout线性布局</h3><p>布局：<br>线性布局有两个相对重要的属性<br>android:orientation=”vertical”   //(vertical,horizontal垂直和水平)，可以决定其子类空间的排布方式。</p>
-<p>android:gravity=”right|bottom”   //可以或起来写 右下角<br>//决定布局下子类的xy位置</p>
-<p>子类：<br>android:layout_gravity=”bottom”<br>//指本身在父容器的xy的一个位置</p>
-<p>android:layout_weight=”1”<br>//指本身控件占父容器的一个比例，如果子类在宽度的方向上扩展，即android:layout_width=”wrap_content”时比例是正比例，如果是android:layout_width=”match_content”则为反比例</p>
-<h3 id="RelativeLayout__u76F8_u5BF9_u5E03_u5C40"><a href="#RelativeLayout__u76F8_u5BF9_u5E03_u5C40" class="headerlink" title="RelativeLayout 相对布局"></a>RelativeLayout 相对布局</h3><h3 id="FrameLayout__u5E27_u5E03_u5C40"><a href="#FrameLayout__u5E27_u5E03_u5C40" class="headerlink" title="FrameLayout 帧布局"></a>FrameLayout 帧布局</h3><h3 id="AbsoluteLayout__u7EDD_u5BF9_u5E03_u5C40"><a href="#AbsoluteLayout__u7EDD_u5BF9_u5E03_u5C40" class="headerlink" title="AbsoluteLayout 绝对布局"></a>AbsoluteLayout 绝对布局</h3><h3 id="TableLayout__u7F51_u683C_u5E03_u5C40"><a href="#TableLayout__u7F51_u683C_u5E03_u5C40" class="headerlink" title="TableLayout 网格布局"></a>TableLayout 网格布局</h3>
       
     </div>
 
@@ -433,7 +334,7 @@ btn3.setOnClickListener(this);
       
         <div class="post-tags">
           
-            <a href="/tags/android/" rel="tag">#android</a>
+            <a href="/tags/mysql/" rel="tag">#mysql</a>
           
         </div>
       
@@ -442,17 +343,13 @@ btn3.setOnClickListener(this);
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/25/python学习-3-条件判断和循环/" rel="next" title="python学习(3)条件判断和循环">
-                <i class="fa fa-chevron-left"></i> python学习(3)条件判断和循环
+              <a href="/2016/03/22/stack-and-heap-transshipment/" rel="next" title="stack and heap(transshipment)">
+                <i class="fa fa-chevron-left"></i> stack and heap(transshipment)
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/18/php-session生命周期/" rel="prev" title="php session生命周期">
-                php session生命周期 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -478,8 +375,8 @@ btn3.setOnClickListener(this);
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/30/android学习-控件/"
-           data-title="android学习--控件" data-url="http://yoursite.com/2016/01/30/android学习-控件/">
+      <div class="ds-thread" data-thread-key="2016/04/15/Mysql无法创建外键的原因/"
+           data-title="Mysql无法创建外键的原因" data-url="http://yoursite.com/2016/04/15/Mysql无法创建外键的原因/">
       </div>
     
   </div>
@@ -580,7 +477,7 @@ btn3.setOnClickListener(this);
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#android__u63A7_u4EF6_u548C_u5E03_u5C40_28_u5B66_u4E60_u548C_u7406_u89E3_29"><span class="nav-number">1.</span> <span class="nav-text">android 控件和布局(学习和理解)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#View__u63A7_u4EF6"><span class="nav-number">1.1.</span> <span class="nav-text">View 控件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TextView_u4E0EEditText"><span class="nav-number">1.1.1.</span> <span class="nav-text">TextView与EditText</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ImageView"><span class="nav-number">1.1.2.</span> <span class="nav-text">ImageView</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Button"><span class="nav-number">1.1.3.</span> <span class="nav-text">Button</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u533F_u540D_u5185_u90E8_u7C7B_u5B9E_u73B0onclick_u4E8B_u4EF6"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">匿名内部类实现onclick事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u901A_u8FC7_u4E00_u4E2A_u5916_u90E8_u7C7B_u6765_u5B9E_u73B0"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">通过一个外部类来实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u901A_u8FC7_u5B9E_u73B0_u4E00_u4E2A_u63A5_u53E3_u7684_u65B9_u6CD5_u5B9E_u73B0_u76D1_u542C_u4E8B_u4EF6"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">通过实现一个接口的方法实现监听事件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E94_u5927_u5E03_u5C40"><span class="nav-number">1.2.</span> <span class="nav-text">五大布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LinearLayout_u7EBF_u6027_u5E03_u5C40"><span class="nav-number">1.2.1.</span> <span class="nav-text">LinearLayout线性布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RelativeLayout__u76F8_u5BF9_u5E03_u5C40"><span class="nav-number">1.2.2.</span> <span class="nav-text">RelativeLayout 相对布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FrameLayout__u5E27_u5E03_u5C40"><span class="nav-number">1.2.3.</span> <span class="nav-text">FrameLayout 帧布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AbsoluteLayout__u7EDD_u5BF9_u5E03_u5C40"><span class="nav-number">1.2.4.</span> <span class="nav-text">AbsoluteLayout 绝对布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TableLayout__u7F51_u683C_u5E03_u5C40"><span class="nav-number">1.2.5.</span> <span class="nav-text">TableLayout 网格布局</span></a></li></ol></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
