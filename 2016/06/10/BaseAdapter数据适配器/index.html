@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="python," />
+  <meta name="keywords" content="android," />
 
 
 
@@ -57,19 +57,36 @@
 
 
 
-<meta name="description" content="if
-1age = 20&amp;#10;if age &amp;#62;= 18:&amp;#10;    print &amp;#39;your age is&amp;#39;, age&amp;#10;    print &amp;#39;adult&amp;#39;&amp;#10;print &amp;#39;END&amp;#39;">
+<meta name="description" content="适配器定义
+数据适配器是用来将视图和数据源连接在一起的桥梁，是为了将不同的数据结构转换成视图可以接受的数据源类型。 优点:降低程序耦合性,容易扩展
+
+ListView的显示和缓存机制
+
+1、如果你有几千几万甚至更多的选项(item)时，其中只有可见的项目（满屏显示的Item数目）存在内存（说的优化就是说在内存中的优化！）中，其他的在Recycler中
+2、ListView先请求一个type1视图(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python学习(3)条件判断和循环">
-<meta property="og:url" content="http://yoursite.com/2016/01/25/python学习-3-条件判断和循环/index.html">
+<meta property="og:title" content="BaseAdapter数据适配器">
+<meta property="og:url" content="http://yoursite.com/2016/06/10/BaseAdapter数据适配器/index.html">
 <meta property="og:site_name" content="ichancer_coder">
-<meta property="og:description" content="if
-1age = 20&amp;#10;if age &amp;#62;= 18:&amp;#10;    print &amp;#39;your age is&amp;#39;, age&amp;#10;    print &amp;#39;adult&amp;#39;&amp;#10;print &amp;#39;END&amp;#39;">
-<meta property="og:updated_time" content="2016-01-25T06:47:44.603Z">
+<meta property="og:description" content="适配器定义
+数据适配器是用来将视图和数据源连接在一起的桥梁，是为了将不同的数据结构转换成视图可以接受的数据源类型。 优点:降低程序耦合性,容易扩展
+
+ListView的显示和缓存机制
+
+1、如果你有几千几万甚至更多的选项(item)时，其中只有可见的项目（满屏显示的Item数目）存在内存（说的优化就是说在内存中的优化！）中，其他的在Recycler中
+2、ListView先请求一个type1视图(">
+<meta property="og:image" content="http://yoursite.com/./images/1465491413914.jpg">
+<meta property="og:image" content="http://yoursite.com/./images/1465491837152.jpg">
+<meta property="og:updated_time" content="2016-06-09T17:29:07.385Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python学习(3)条件判断和循环">
-<meta name="twitter:description" content="if
-1age = 20&amp;#10;if age &amp;#62;= 18:&amp;#10;    print &amp;#39;your age is&amp;#39;, age&amp;#10;    print &amp;#39;adult&amp;#39;&amp;#10;print &amp;#39;END&amp;#39;">
+<meta name="twitter:title" content="BaseAdapter数据适配器">
+<meta name="twitter:description" content="适配器定义
+数据适配器是用来将视图和数据源连接在一起的桥梁，是为了将不同的数据结构转换成视图可以接受的数据源类型。 优点:降低程序耦合性,容易扩展
+
+ListView的显示和缓存机制
+
+1、如果你有几千几万甚至更多的选项(item)时，其中只有可见的项目（满屏显示的Item数目）存在内存（说的优化就是说在内存中的优化！）中，其他的在Recycler中
+2、ListView先请求一个type1视图(">
 
 
 
@@ -87,7 +104,7 @@
   };
 </script>
 
-  <title> python学习(3)条件判断和循环 | ichancer_coder </title>
+  <title> BaseAdapter数据适配器 | ichancer_coder </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +282,7 @@
             
             
               
-                python学习(3)条件判断和循环
+                BaseAdapter数据适配器
               
             
           </h1>
@@ -277,38 +294,19 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-25T14:11:06+08:00" content="2016-01-25">
-              2016-01-25
+            <time itemprop="dateCreated" datetime="2016-06-10T00:50:45+08:00" content="2016-06-10">
+              2016-06-10
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/脚本/" itemprop="url" rel="index">
-                    <span itemprop="name">脚本</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/25/python学习-3-条件判断和循环/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/python学习-3-条件判断和循环/" itemprop="commentsCount"></span>
+                <a href="/2016/06/10/BaseAdapter数据适配器/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/10/BaseAdapter数据适配器/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -329,47 +327,115 @@
       
 
       
-        <p><strong>if</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">age = 20&#10;if age &#62;= 18:&#10;    print &#39;your age is&#39;, age&#10;    print &#39;adult&#39;&#10;print &#39;END&#39;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your age is 20&#10;adult&#10;END</span><br></pre></td></tr></table></figure>
-<p>注意:<br>        Python代码的缩进规则。具有相同缩进的代码被视为代码块，上面的3，4行 print 语句就构成一个代码块（但不包括第5行的print）。如果 if 语句判断为 True，就会执行这个代码块。</p>
-<p>缩进请严格按照Python的习惯写法：4个空格，不要使用Tab，更不要混合Tab和空格，否则很容易造成因为缩进引起的语法错误。</p>
-<p>注意: if 语句后接表达式，然后用:表示代码块开始。</p>
-<p>如果你在Python交互环境下敲代码，还要特别留意缩进，并且退出缩进需要多敲一行回车：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">age = 20&#10;if age &#62;= 18:&#10;    print &#39;your age is&#39;, age&#10;    print &#39;adult&#39;</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your age is 20&#10;adult</span><br></pre></td></tr></table></figure>
-<p><strong>if-else</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">score = 55&#10;if score&#62;=60:&#10;    print &#39;passed&#39;&#10;else:&#10;    print &#39;failed&#39;&#10;    print &#39;aaa&#39;</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">failed&#10;aaa</span><br></pre></td></tr></table></figure>
-<p>注意：else后面要有:</p>
-<p><strong>if-elif-else</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">score = 85&#10;&#10;if score&#62;=90:&#10;    print &#39;excellent&#39;&#10;elif score&#62;=80:&#10;    print &#39;good&#39;&#10;elif score&#62;=60:&#10;    print &#39;passed&#39;&#10;else:&#10;    print &#39;failed&#39;</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">good</span><br></pre></td></tr></table></figure>
-<p><strong>for循环结构</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">L = [75, 92, 59, 68]&#10;sum = 0.0&#10;for name in L:&#10;    sum+=name&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">294.0</span><br></pre></td></tr></table></figure>
-<p><strong>while</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 1&#10;while x&#60;=100:&#10;    sum+=x&#10;    x+=2&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2500</span><br></pre></td></tr></table></figure></p>
-<p><strong>while-break</strong><br>用 for 循环或者 while 循环时，如果要在循环体内直接退出循环，可以使用 break 语句。</p>
-<p>利用 while True 无限循环配合 break 语句，计算 1 + 2 + 4 + 8 + 16 + … 的前20项的和。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 1&#10;n = 1&#10;while True:&#10;    if n&#62;20:&#10;        break&#10;    sum=sum+x&#10;    x=x*2&#10;    n=n+1&#10;&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1048575</span><br></pre></td></tr></table></figure>
-<p><strong>continue</strong><br>在循环过程中，可以用break退出当前循环，还可以用continue跳过后续循环代码，继续下一次循环。</p>
-<p>对已有的计算 0 - 100 的while循环进行改造，通过增加 continue 语句，使得只计算奇数的和：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum = 0&#10;x = 0&#10;while True:&#10;    x = x + 1&#10;    if x &#62; 100:&#10;        break&#10;    if x%2==0:&#10;        continue&#10;    sum+=x&#10;print sum</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2500</span><br></pre></td></tr></table></figure>
-<p><strong>多重循环</strong><br>在循环内部，还可以嵌套循环，我们来看一个例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#23545;100&#20197;&#20869;&#30340;&#20004;&#20301;&#25968;&#65292;&#35831;&#20351;&#29992;&#19968;&#20010;&#20004;&#37325;&#24490;&#29615;&#25171;&#21360;&#20986;&#25152;&#26377;&#21313;&#20301;&#25968;&#25968;&#23383;&#27604;&#20010;&#20301;&#25968;&#25968;&#23383;&#23567;&#30340;&#25968;&#65292;&#20363;&#22914;&#65292;23&#65288;2 &#60; 3&#65289;&#12290;&#10;&#10;for x in [1,2,3,4,5,6,7,8,9]:&#10;    for y in [0,1,2,3,4,5,6,7,8,9]:&#10;        if x&#60;y:&#10;            print x*10+y</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12&#10;13&#10;14&#10;15&#10;16&#10;17&#10;18&#10;19&#10;23&#10;24&#10;25&#10;26&#10;27&#10;28&#10;29&#10;34&#10;35&#10;36&#10;37&#10;38&#10;39&#10;45&#10;46&#10;47&#10;48&#10;49&#10;56&#10;57&#10;58&#10;59&#10;67&#10;68&#10;69&#10;78&#10;79&#10;89</span><br></pre></td></tr></table></figure>
+        <p><img src="/./images/1465491413914.jpg" alt="enter description here" title="1465491413914.jpg"></p>
+<h2 id="u9002_u914D_u5668_u5B9A_u4E49"><a href="#u9002_u914D_u5668_u5B9A_u4E49" class="headerlink" title="适配器定义"></a>适配器定义</h2><blockquote>
+<p>数据适配器是用来将视图和数据源连接在一起的桥梁，是为了将不同的数据结构转换成视图可以接受的数据源类型。 优点:降低程序耦合性,容易扩展</p>
+</blockquote>
+<h2 id="ListView_u7684_u663E_u793A_u548C_u7F13_u5B58_u673A_u5236"><a href="#ListView_u7684_u663E_u793A_u548C_u7F13_u5B58_u673A_u5236" class="headerlink" title="ListView的显示和缓存机制"></a>ListView的显示和缓存机制</h2><p><img src="/./images/1465491837152.jpg" alt="enter description here" title="1465491837152.jpg"></p>
+<blockquote>
+<p>1、如果你有几千几万甚至更多的选项(item)时，其中只有可见的项目（满屏显示的Item数目）存在内存（说的优化就是说在内存中的优化！）中，其他的在Recycler中</p>
+<p>2、ListView先请求一个type1视图(getView)然后请求其他可见的项目。convertView在getView中是空(null)的，第一次都是为空的，只要显示过了convertView都不为空，会保存在Recycler中</p>
+<p>3、当item1滚出屏幕，并且一个新的项目从屏幕低端上来时，ListView再请求一个type1视图。convertView此时不是空值了，它的值是item1。你只需设定新的数据然后返回convertView，不必重新创建一个视图，省去了inflate和findViewById的时间，性能就得到了优化。</p>
+</blockquote>
+<pre><code>package com.dzt.listviewdemo;
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+    private ListAdapter adapter;
+    private ListView lv = null;
+    private ArrayList&lt;string&gt; list = new ArrayList&lt;string&gt;();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        lv = (ListView) findViewById(R.id.lv_list);
+        adapter = new ListAdapter();
+        for (int i = 0; i &lt; 100; i++) {
+            list.add(item  + i);
+        }
+        lv.setAdapter(adapter);
+    }
+
+    private class ListAdapter extends BaseAdapter {
+
+        private LayoutInflater mInflater;
+
+        ListAdapter() {
+            mInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        }
+
+        @Override
+        public int getCount() {
+            // TODO Auto-generated method stub
+            return list.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            // TODO Auto-generated method stub
+            return list.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            // TODO Auto-generated method stub
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            // TODO Auto-generated method stub
+            System.out.println(getView  + position +      + convertView);
+            viewHolder holder = null;
+            if (convertView == null) {
+                convertView = mInflater.inflate(R.layout.item, null);
+                holder = new viewHolder();
+                holder.text = (TextView) convertView.findViewById(R.id.tv_text);
+                holder.image = (ImageView) convertView
+                        .findViewById(R.id.iv_img);
+                convertView.setTag(holder);
+            } else {
+                holder = (viewHolder) convertView.getTag();
+            }
+            holder.text.setText(list.get(position));
+            if (position % 2 == 0) {
+                holder.image.setImageResource(R.drawable.ic_launcher);
+            } else {
+                holder.image.setImageResource(R.drawable.icon);
+            }
+
+            return convertView;
+        }
+
+    }
+
+    /**
+     * 使用一个类来保存Item中的元素
+     * 
+     * @author Administrator
+     * 
+     */
+    public static class viewHolder {
+        public TextView text;
+        public ImageView image;
+    }
+}
+</code></pre><p><a href="http://www.2cto.com/kf/201408/329966.html" target="_blank" rel="external">enter description here</a></p>
+
       
     </div>
 
@@ -377,7 +443,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag">#python</a>
+            <a href="/tags/android/" rel="tag">#android</a>
           
         </div>
       
@@ -386,17 +452,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/25/python学习-2-List和Tuple类型/" rel="next" title="python学习(2)List和Tuple类型">
-                <i class="fa fa-chevron-left"></i> python学习(2)List和Tuple类型
+              <a href="/2016/05/16/nginx-域名配置相关/" rel="next" title="nginx 域名配置相关">
+                <i class="fa fa-chevron-left"></i> nginx 域名配置相关
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/30/android学习-控件/" rel="prev" title="android学习--控件">
-                android学习--控件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -422,8 +484,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/25/python学习-3-条件判断和循环/"
-           data-title="python学习(3)条件判断和循环" data-url="http://yoursite.com/2016/01/25/python学习-3-条件判断和循环/">
+      <div class="ds-thread" data-thread-key="2016/06/10/BaseAdapter数据适配器/"
+           data-title="BaseAdapter数据适配器" data-url="http://yoursite.com/2016/06/10/BaseAdapter数据适配器/">
       </div>
     
   </div>
@@ -524,7 +586,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u9002_u914D_u5668_u5B9A_u4E49"><span class="nav-number">1.</span> <span class="nav-text">适配器定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ListView_u7684_u663E_u793A_u548C_u7F13_u5B58_u673A_u5236"><span class="nav-number">2.</span> <span class="nav-text">ListView的显示和缓存机制</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
